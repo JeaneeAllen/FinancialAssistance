@@ -12,6 +12,9 @@ app.use(express.static('build'));
 const applicantsRouter = require('./routes/applicants.router.js');
 app.use('/api/applicants', applicantsRouter);
 
+const dependentsRouter = require('./routes/dependents.router.js');
+app.use('/api/dependents', dependentsRouter);
+
 
 /** ---------- START SERVER ---------- **/
 app.listen(port, function () {
